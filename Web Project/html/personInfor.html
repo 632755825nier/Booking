@@ -3,7 +3,12 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="../css/NavBar.css">
+    <link rel="stylesheet" href="../css/personIfm.css">
+    <link href="../res/icon/index_icon/iconfont.css" rel="stylesheet">
+    <script src="../js/index_container.js"></script>
+    <script src="../js/NavBar.js"></script>
 </head>
 <body>
 <div id="registertip" class="tip"></div>
@@ -114,15 +119,34 @@
                     <a href="javascript:void(0)" onclick="" class="user-btn-2">上线我的住宿</a>
                 </li>
                 <li class="user-li_5">
-                    <!--<img src="">-->
-                    <!-- 添加人物头像-->
+                    <img src="../res/images/personIfm/person.png" style="width: 37px;height: 37px">
                 </li>
-                <li class="user-li_6">
-                    <a id="log-btn" href="javascript:void(0)" onclick="showIfm()" class="user-btn" >用户名</a>
+                <li class="user-li_6 user_name_li">
+                    <a id= href="javascript:void(0)" onclick="showIfm()" class=" user_name" >用户名</a>
                 </li>
             </ul>
         </div>
     </div>
 </div>
+<div class="flow_box">
+    <div class="flow">
+        <div class="flow_up">
+            <div class="flow_up_1 flow_up_left">√</div>
+            <div class="flow_up_2 flow_up_left">选择您的客房</div>
+            <div class="flow_up_3 flow_up_left"><hr ></div>
+            <div class="flow_up_4 flow_up_left">2</div>
+            <div class="flow_up_5 flow_up_left">填写您的信息</div>
+            <div class="flow_up_6 flow_up_left"><hr ></div>
+            <div class="flow_up_7 flow_up_left">3</div>
+            <div class="flow_up_8 flow_up_left">最终信息</div>
+        </div>
+    </div>
+    <div class="flow_down">
+        <span class="flow_down_userName">用户名</span>
+
+    </div>
+
+</div>
 </body>
+
 </html>
