@@ -121,7 +121,7 @@ $(document).ready(function () {
         '<h3>' + hotelName + '</h3>' +
         '<div>' +
         zans +
-        '<div class="iconfont icon-dianzan zan" id="zan"></div>' +
+        '<div class="iconfont icon-dianzan zan zan_1"></div>' +
         '</div>' +
         '<div class="grade">' + grade + '</div>' +
         '<div class="grade-num">' + evaluate + '条住客点评</div>' +
