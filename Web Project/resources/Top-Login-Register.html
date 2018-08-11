@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="../css/iconfont.css">
+	<link href="../css/booking_com.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="../css/NavBar.css">
+
+	<script src="//at.alicdn.com/t/font_781787_db0f5cbcgx.js" type="text/javascript"></script>
+	<script src="../js/booking_com.js" type="text/javascript"></script>
+	<link href="../icon/iconfont.css" rel="stylesheet">
+	<link href="../css/index_container.css" rel="stylesheet">
+
+	<title>loginAndRegist</title>
+</head>
+<body>
+	<div id="registertip" class="tip"></div>
+	<div class="top">
+		<div class="head">
+			<img id="Booking_logo" class="logo" src="../images/logo.png">
+			<div class="user-bar">
+				<ul class="user-ul">
+					<li class="user-li_1" >
+						<a id="mon_tex" href="javascript:void(0)"  class="user-tex" data-title="选择您使用的货币">元</a>
+						<div class="mon_box" id="mon_id_box">
+							<div class="mon_trigon"></div>
+								<h3>常用货币</h3>
+								<ul class="mon_ul">
+									<li class="mon_li_other"><span>元</span><small>人民币</small></li>
+									<li class="mon_li"><span>€£$</span><small>住宿地使用的货币</small></li>
+									<li class="mon_li"><span>US$</span><small>美元</small></li>
+									<li class="mon_li"><span>€</span><small>欧元</small></li>
+									<li class="mon_li"><span>TWD</span><small>新台币</small></li>
+									<li class="mon_li"><span>HK$</span><small>港币</small></li>
+									<li class="mon_li"><span>£</span><small>英镑</small></li>
+								</ul>
+
+							<h3>所有货币</h3>
+							<ul class="mon_ul_2">
+								<li class="mon_li"><span>UAH</span><small>乌克兰赫夫米</small></li>
+								<li class="mon_li_other"><span>元</span><small>人民币</small></li>
+								<li class="mon_li"><span>₪</span><small>以色列新谢克尔</small></li>
+								<li class="mon_li"><span>RUB</span><small>俄罗斯卢布</small></li>
+								<li class="mon_li"><span>BGN</span><small>保加利亚新列弗</small></li>
+								<li class="mon_li"><span>CAD</span><small>加元</small></li>
+								<li class="mon_li"><span>HUF</span><small>匈牙利福林</small></li>
+								<li class="mon_li"><span>ZAR</span><small>南非兰特</small></li>
+								<li class="mon_li"><span>QAR</span><small>卡塔尔里亚尔</small></li>
+								<li class="mon_li"><span>Rp</span><small>印尼卢比</small></li>
+								<li class="mon_li"><span>Rs.</span><small>印度卢比</small></li>
+								<li class="mon_li"><span>KZT</span><small>哈萨克斯坦坚戈</small></li>
+								<li class="mon_li"><span>EGP</span><small>埃及镑</small></li>
+								<li class="mon_li"><span>MXN</span><small>墨西哥比索</small></li>
+								<li class="mon_li"><span>BHD</span><small>巴林第纳尔</small></li>
+								<li class="mon_li"><span>R$</span><small>巴西雷阿尔</small></li>
+								<li class="mon_li"><span>NOK</span><small>挪威克朗</small></li>
+								<li class="mon_li"><span>Kč</span><small>捷克克朗</small></li>
+
+
+								<li class="mon_li"><span>MDL</span><small>摩尔多瓦列伊</small></li>
+								<li class="mon_li"><span>FJD</span><small>斐济元</small></li>
+								<li class="mon_li"><span>S$</span><small>新元</small></li>
+								<li class="mon_li"><span>TWD</span><small>新台币</small></li>
+								<li class="mon_li"><span>TL</span><small>新土耳其里拉</small></li>
+								<li class="mon_li"><span>NZD</span><small>新西兰元</small></li>
+								<li class="mon_li"><span>¥</span><small>智利比索</small></li>
+								<li class="mon_li"><span>CL$</span><small>墨西哥比索</small></li>
+								<li class="mon_li"><span>GEL</span><small>格鲁吉亚拉里</small></li>
+								<li class="mon_li"><span>€</span><small>欧元</small></li>
+								<li class="mon_li"><span>SAR</span><small>沙特阿拉伯里亚尔</small></li>
+								<li class="mon_li"><span>zł</span><small>波兰兹罗提</small></li>
+
+								<li class="mon_li"><span>THB</span><small>泰铢</small></li>
+								<li class="mon_li"><span>HK$</span><small>港币</small></li>
+								<li class="mon_li"><span>AUD</span><small>澳元</small></li>
+								<li class="mon_li"><span>SEK</span><small>瑞典克朗</small></li>
+								<li class="mon_li"><span>CHF</span><small>科威特第纳尔</small></li>
+								<li class="mon_li"><span>JOD</span><small>约旦第纳尔</small></li>
+								<li class="mon_li"><span>NAD</span><small>纳米比亚元</small></li>
+								<li class="mon_li"><span>lei</span><small>罗马尼亚新列伊</small></li>
+								<li class="mon_li"><span>US$</span><small>美元</small></li>
+								<li class="mon_li"><span>£</span><small>英镑</small></li>
+								<li class="mon_li"><span>XOF</span><small>西非法郎</small></li>
+								<li class="mon_li"><span>AZN</span><small>阿塞拜疆新马纳特</small></li>
+
+								<li class="mon_li"><span>OMR</span><small>阿曼里亚尔</small></li>
+								<li class="mon_li"><span>AR$</span><small>阿根廷比索</small></li>
+								<li class="mon_li"><span>AED</span><small>阿联酋迪拉姆</small></li>
+								<li class="mon_li"><span>KRW</span><small>韩元</small></li>
+								<li class="mon_li"><span>MYR</span><small>马来西亚令吉</small></li>
+							</ul>
+						</div>
+					</li>
+					<li class="user-li_2">
+						<a href="javascript:void(0)" id="lang-i" class="user-tex" data-title="选择您使用的语言" >
+							<i class="iconfont icon-jiantizhongwen lang-i-cla"  ></i>
+						</a>
+
+							<div class="language_cla" id="language_id">
+							<div class="mon_trigon"></div>
+							<h3>中国的客人最常使用的语言</h3>
+							<ul class="ul_lang">
+								<li class="li_lang"><a href="#"><i class="iconfont icon-jiantizhongwen"></i><span>简体中文</span></a></li>
+								<li class="li_lang"><a href="#"><i class="iconfont icon-fantizhongwen"></i><span>繁体中文</span></a></li>
+								<li class="li_lang"><a href="#"><i class="iconfont icon-Nederland"></i><span>Nederland</span></a></li>
+								<li class="li_lang"><a href="#"><i class="iconfont icon-uk"></i><span>UK</span></a></li>
+								<li class="li_lang"><a href="#"><i class="iconfont icon-US"></i><span>US</span></a></li>
+								<li class="li_lang"><a href="#"><i class="iconfont icon-riben"></i><span>日本语</span></a></li>
+								<li class="li_lang"><a href="#"><i class="iconfont icon-Deutsch-flag"></i><span>Deutsch</span></a></li>
+								<li class="li_lang"><a href="#"><i class="iconfont icon-arrow-left"></i><span>arrow</span></a></li>
+								<li class="li_lang"><a href="#"><i class="iconfont icon-shang"></i><span>Shang</span></a></li>
+							</ul>
+
+						</div>
+					</li>
+					<li class="user-li_3">
+						<i class="iconfont icon-weixin wechat-i-cla" id="wechat-i" data-title="请关注Booking.com 官方微信号" ></i>
+						<div id="img_id" >
+							<img src="../images/wechat_img.png" id="img_id2" style="width: 220px;height: 201px">
+						</div>
+					</li>
+					<li class="user-li_4">
+						<a href="javascript:void(0)" onclick="" class="user-btn-2">上线我的住宿</a>
+					</li>
+					<li class="user-li_5">
+						<a id="reg-btn" href="javascript:void(0)" onclick="showBackR()" class="user-btn" data-title="成为会员，享受专属隐藏优惠">注册</a>
+					</li>
+					<li class="user-li_6">
+						<a id="log-btn" href="javascript:void(0)" onclick="showBackL()" class="user-btn" data-title="使用已存信息，预订更快捷">登录</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="head_dowm">
+			<ul class="nav_ul">
+				<li class="nav_li_1"><a href="#">住宿</a></li>
+				<li class="nav_li_2"><a href="#">机票</a></li>
+				<li class="nav_li_2"><a href="#">租车</a></li>
+				<li class="nav_li_3"><a href="#">机场出租车</a></li>
+
+			</ul>
+
+		</div>
+	</div>
+	<!-- 搜索功能模块-->
+	<div class="search">
+		<div class="search_tex">
+			<h2 class="search_tex_h2">去旅行总不会错。查找优惠！</h2>
+			<p class="search_tex_p">从舒适的乡村民宿到时髦的都市公寓</p>
+		</div>
+		<div class="search_container">
+			<div class="search_container_one">
+				<svg class="icon" aria-hidden="true" >
+					<use xlink:href="#icon-chuang"></use>
+				</svg>
+
+					<input class="search_container_one_input" placeholder="目的地?">
+
+
+
+			</div>
+
+			<div class="search_container_two">
+				<svg class="icon" aria-hidden="true">
+					<use xlink:href="#icon-rili"></use>
+				</svg>
+				<span class="search_container_two_span1" onclick="checkclick(1)">入住</span>
+				<span class="search_container_two_span2">-</span>
+				<span class="search_container_two_span3" onclick="checkclick(-1)">退房</span>
+
+				<div class="search_container_three_calendar_container">
+					<span class="search_container_three_calendar_container_span"></span>
+
+					<div class="leftmonth_container">
+						<ul>
+							<li class="prev" onclick="change_page(-1)"><</li>
+							<li class="leftmonth_month">
+								2018年8月
+							</li>
+
+						</ul>
+					</div>
+
+					<div class="week">
+						<ul>
+
+							<li>周一</li>
+							<li>周二</li>
+							<li>周三</li>
+							<li>周四</li>
+							<li>周五</li>
+							<li>周六</li>
+							<li>周日</li>
+
+						</ul>
+					</div>
+
+					<div class="day">
+						<ul>
+							<li class="day_enum" onclick="choosedate('1-0')"></li>
+							<li class="day_enum" onclick="choosedate('1-1')"></li>
+							<li class="day_enum" onclick="choosedate('1-2')"></li>
+							<li class="day_enum" onclick="choosedate('1-3')"></li>
+							<li class="day_enum" onclick="choosedate('1-4')"></li>
+							<li class="day_enum" onclick="choosedate('1-5')"></li>
+							<li class="day_enum" onclick="choosedate('1-6')"></li>
+
+							<li class="day_enum" onclick="choosedate('1-7')"></li>
+							<li class="day_enum" onclick="choosedate('1-8')"></li>
+							<li class="day_enum" onclick="choosedate('1-9')"></li>
+							<li class="day_enum" onclick="choosedate('1-10')"></li>
+							<li class="day_enum" onclick="choosedate('1-11')"></li>
+							<li class="day_enum" onclick="choosedate('1-12')"></li>
+							<li class="day_enum" onclick="choosedate('1-13')"></li>
+
+							<li class="day_enum" onclick="choosedate('1-14')"></li>
+							<li class="day_enum" onclick="choosedate('1-15')"></li>
+							<li class="day_enum" onclick="choosedate('1-16')"></li>
+							<li class="day_enum" onclick="choosedate('1-17')"></li>
+							<li class="day_enum" onclick="choosedate('1-18')"></li>
+							<li class="day_enum" onclick="choosedate('1-19')"></li>
+							<li class="day_enum" onclick="choosedate('1-20')"></li>
+
+							<li class="day_enum" onclick="choosedate('1-21')"></li>
+							<li class="day_enum" onclick="choosedate('1-22')"></li>
+							<li class="day_enum" onclick="choosedate('1-23')"></li>
+							<li class="day_enum" onclick="choosedate('1-24')"></li>
+							<li class="day_enum" onclick="choosedate('1-25')"></li>
+							<li class="day_enum" onclick="choosedate('1-26')"></li>
+							<li class="day_enum" onclick="choosedate('1-27')"></li>
+
+							<li class="day_enum" onclick="choosedate('1-28')"></li>
+							<li class="day_enum" onclick="choosedate('1-29')"></li>
+							<li class="day_enum" onclick="choosedate('1-30')"></li>
+							<li class="day_enum" onclick="choosedate('1-31')"></li>
+							<li class="day_enum" onclick="choosedate('1-32')"></li>
+							<li class="day_enum" onclick="choosedate('1-33')"></li>
+							<li class="day_enum" onclick="choosedate('1-34')"></li>
+
+							<li class="day_enum" onclick="choosedate('1-35')"></li>
+							<li class="day_enum" onclick="choosedate('1-36')"></li>
+							<li class="day_enum" onclick="choosedate('1-37')"></li>
+							<li class="day_enum" onclick="choosedate('1-38')"></li>
+							<li class="day_enum" onclick="choosedate('1-39')"></li>
+							<li class="day_enum" onclick="choosedate('1-40')"></li>
+						</ul>
+
+					</div>
+
+					<div class="rightmonth_container">
+						<ul>
+							<li class="rightprev" onclick="change_page(1)">></li>
+							<li class="rightmonth_month">
+								2018年9月
+							</li>
+
+						</ul>
+					</div>
+
+					<div class="right_week">
+						<ul>
+
+							<li>周一</li>
+							<li>周二</li>
+							<li>周三</li>
+							<li>周四</li>
+							<li>周五</li>
+							<li>周六</li>
+							<li>周日</li>
+
+						</ul>
+					</div>
+
+					<div class="right_day">
+						<ul>
+							<li class="right_day_enum" onclick="choosedate('2-0')"></li>
+							<li class="right_day_enum" onclick="choosedate('2-1')"></li>
+							<li class="right_day_enum" onclick="choosedate('2-2')"></li>
+							<li class="right_day_enum" onclick="choosedate('2-3')"></li>
+							<li class="right_day_enum" onclick="choosedate('2-4')"></li>
+							<li class="right_day_enum" onclick="choosedate('2-5')"></li>
+							<li class="right_day_enum" onclick="choosedate('2-6')"></li>
+
+							<li class="right_day_enum" onclick="choosedate('2-7')"></li>
+							<li class="right_day_enum" onclick="choosedate('2-8')"></li>
+							<li class="right_day_enum" onclick="choosedate('2-9')"></li>
+							<li class="right_day_enum" onclick="choosedate('2-10')"></li>
+							<li class="right_day_enum" onclick="choosedate('2-11')"></li>
+							<li class="right_day_enum" onclick="choosedate('2-12')"></li>
+							<li class="right_day_enum" onclick="choosedate('2-13')"></li>
+
+							<li class="right_day_enum" onclick="choosedate('2-14')"></li>
+							<li class="right_day_enum" onclick="choosedate('2-15')"></li>
+							<li class="right_day_enum" onclick="choosedate('2-16')"></li>
+							<li class="right_day_enum" onclick="choosedate('2-17')"></li>
+							<li class="right_day_enum" onclick="choosedate('2-18')"></li>
+							<li class="right_day_enum" onclick="choosedate('2-19')"></li>
+							<li class="right_day_enum" onclick="choosedate('2-20')"></li>
+
+							<li class="right_day_enum" onclick="choosedate('2-21')"></li>
+							<li class="right_day_enum" onclick="choosedate('2-22')"></li>
+							<li class="right_day_enum" onclick="choosedate('2-23')"></li>
+							<li class="right_day_enum" onclick="choosedate('2-24')"></li>
+							<li class="right_day_enum" onclick="choosedate('2-25')"></li>
+							<li class="right_day_enum" onclick="choosedate('2-26')"></li>
+							<li class="right_day_enum" onclick="choosedate('2-27')"></li>
+
+							<li class="right_day_enum" onclick="choosedate('2-28')"></li>
+							<li class="right_day_enum" onclick="choosedate('2-29')"></li>
+							<li class="right_day_enum" onclick="choosedate('2-30')"></li>
+							<li class="right_day_enum" onclick="choosedate('2-31')"></li>
+							<li class="right_day_enum" onclick="choosedate('2-32')"></li>
+							<li class="right_day_enum" onclick="choosedate('2-33')"></li>
+							<li class="right_day_enum" onclick="choosedate('2-34')"></li>
+
+							<li class="right_day_enum" onclick="choosedate('2-35')"></li>
+							<li class="right_day_enum" onclick="choosedate('2-36')"></li>
+							<li class="right_day_enum" onclick="choosedate('2-37')"></li>
+							<li class="right_day_enum" onclick="choosedate('2-38')"></li>
+							<li class="right_day_enum" onclick="choosedate('2-39')"></li>
+							<li class="right_day_enum" onclick="choosedate('2-40')"></li>
+
+
+						</ul>
+
+					</div>
+
+				</div>
+
+
+			</div>
+
+			<div class="search_container_three">
+				<svg class="icon icon-ren " aria-hidden="true \" onclick="opencontainer2(1)">
+					<use xlink:href="#icon-ren"></use>
+				</svg>
+				<span class="search_container_three_span" onclick="opencontainer2(1)">1名成人&1名儿童</span>
+				<svg class="icon icon-shangxiajiantou" aria-hidden="true" onclick="opencontainer2(1)">
+					<use xlink:href="#icon-shangxiajiantou"></use>
+				</svg>
+
+				<div class="user_choose_container">
+					<div class="user_choose_one">
+						<span>客房</span>
+
+						<div class="user_choose_one_num" onclick="opennumdiv(1)">
+							<span class="roomnum">1</span>
+							<svg class="icon icon-shangxiajiantou2 " aria-hidden="true \">
+								<use xlink:href="#icon-shangxiajiantou"></use>
+							</svg>
+							<div class="choose_roomnum">
+								<ul>
+									<li onclick="choosenum('0-0')">1</li>
+									<li onclick="choosenum('0-1')">2</li>
+									<li onclick="choosenum('0-2')">3</li>
+									<li onclick="choosenum('0-3')">4</li>
+									<li onclick="choosenum('0-4')">5</li>
+
+									<li onclick="choosenum('0-5')">6</li>
+									<li onclick="choosenum('0-6')">7</li>
+									<li onclick="choosenum('0-7')">8</li>
+									<li onclick="choosenum('0-8')">9</li>
+									<li onclick="choosenum('0-9')">10</li>
+
+									<li onclick="choosenum('0-10')">11</li>
+									<li onclick="choosenum('0-11')">12</li>
+									<li onclick="choosenum('0-12')">13</li>
+									<li onclick="choosenum('0-13')">14</li>
+									<li onclick="choosenum('0-14')">15</li>
+
+									<li onclick="choosenum('0-15')">16</li>
+									<li onclick="choosenum('0-16')">17</li>
+									<li onclick="choosenum('0-17')">18</li>
+									<li onclick="choosenum('0-18')">19</li>
+									<li onclick="choosenum('0-19')">20</li>
+
+									<li onclick="choosenum('0-20')">21</li>
+									<li onclick="choosenum('0-21')">22</li>
+									<li onclick="choosenum('0-22')">23</li>
+									<li onclick="choosenum('0-23')">24</li>
+									<li onclick="choosenum('0-24')">25</li>
+
+									<li onclick="choosenum('0-25')">26</li>
+									<li onclick="choosenum('0-26')">27</li>
+									<li onclick="choosenum('0-27')">28</li>
+									<li onclick="choosenum('0-28')">29</li>
+									<li onclick="choosenum('0-29')">30</li>
+
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="user_choose_two">
+						<span>成人</span>
+
+						<div class="user_choose_two_num" onclick="opennumdiv(2)">
+							<span class="adultnum">1</span>
+							<svg class="icon icon-shangxiajiantou2 " aria-hidden="true \">
+								<use xlink:href="#icon-shangxiajiantou"></use>
+							</svg>
+
+							<div class="choose_adultnum">
+								<ul>
+									<li onclick="choosenum('1-0')">1</li>
+									<li onclick="choosenum('1-1')">2</li>
+									<li onclick="choosenum('1-2')">3</li>
+									<li onclick="choosenum('1-3')">4</li>
+									<li onclick="choosenum('1-4')">5</li>
+
+									<li onclick="choosenum('1-5')">6</li>
+									<li onclick="choosenum('1-6')">7</li>
+									<li onclick="choosenum('1-7')">8</li>
+									<li onclick="choosenum('1-8')">9</li>
+									<li onclick="choosenum('1-9')">10</li>
+
+									<li onclick="choosenum('1-10')">11</li>
+									<li onclick="choosenum('1-11')">12</li>
+									<li onclick="choosenum('1-12')">13</li>
+									<li onclick="choosenum('1-13')">14</li>
+									<li onclick="choosenum('1-14')">15</li>
+
+									<li onclick="choosenum('1-15')">16</li>
+									<li onclick="choosenum('1-16')">17</li>
+									<li onclick="choosenum('1-17')">18</li>
+									<li onclick="choosenum('1-18')">19</li>
+									<li onclick="choosenum('1-19')">20</li>
+
+									<li onclick="choosenum('1-20')">21</li>
+									<li onclick="choosenum('1-21')">22</li>
+									<li onclick="choosenum('1-22')">23</li>
+									<li onclick="choosenum('1-23')">24</li>
+									<li onclick="choosenum('1-24')">25</li>
+
+									<li onclick="choosenum('1-25')">26</li>
+									<li onclick="choosenum('1-26')">27</li>
+									<li onclick="choosenum('1-27')">28</li>
+									<li onclick="choosenum('1-28')">29</li>
+									<li onclick="choosenum('1-29')">30</li>
+
+								</ul>
+							</div>
+						</div>
+
+
+					</div>
+					<div class="user_choose_three">
+						<span>儿童</span>
+
+						<div class="user_choose_three_num" onclick="opennumdiv(3)">
+							<span class="childnum">0</span>
+							<svg class="icon icon-shangxiajiantou2 " aria-hidden="true \">
+								<use xlink:href="#icon-shangxiajiantou"></use>
+							</svg>
+
+							<div class="choose_childnum">
+								<ul>
+									<li onclick="choosenum('2-0')">0</li>
+									<li onclick="choosenum('2-1')">1</li>
+									<li onclick="choosenum('2-2')">2</li>
+									<li onclick="choosenum('2-3')">3</li>
+									<li onclick="choosenum('2-4')">4</li>
+									<li onclick="choosenum('2-5')">5</li>
+
+									<li onclick="choosenum('2-6')">6</li>
+									<li onclick="choosenum('2-7')">7</li>
+									<li onclick="choosenum('2-8')">8</li>
+									<li onclick="choosenum('2-9')">9</li>
+									<li onclick="choosenum('2-10')">10</li>
+
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="user_choose_container2">
+					<span>请选择同行儿童的年龄</span>
+					<ul>
+						<li>
+							<div class="child" onclick="openagediv(0)">
+								<span class="child_nowage">退房时的年龄</span>
+								<svg class="icon icon-shangxiajiantou3" aria-hidden="true">
+									<use xlink:href="#icon-shangxiajiantou"></use>
+								</svg>
+
+							</div>
+
+							<div class="child" onclick="openagediv(1)">
+								<span class="child_nowage">退房时的年龄</span>
+								<svg class="icon icon-shangxiajiantou4" aria-hidden="true">
+									<use xlink:href="#icon-shangxiajiantou"></use>
+								</svg>
+
+							</div>
+						</li>
+						<li>
+							<div class="child" onclick="openagediv(2)">
+								<span class="child_nowage">退房时的年龄</span>
+								<svg class="icon icon-shangxiajiantou3" aria-hidden="true">
+									<use xlink:href="#icon-shangxiajiantou"></use>
+								</svg>
+
+
+							</div>
+
+							<div class="child" onclick="openagediv(3)">
+								<span class="child_nowage">退房时的年龄</span>
+								<svg class="icon icon-shangxiajiantou4" aria-hidden="true">
+									<use xlink:href="#icon-shangxiajiantou"></use>
+								</svg>
+
+
+							</div>
+						</li>
+						<li>
+							<div class="child" onclick="openagediv(4)">
+								<span class="child_nowage">退房时的年龄</span>
+								<svg class="icon icon-shangxiajiantou3" aria-hidden="true">
+									<use xlink:href="#icon-shangxiajiantou"></use>
+								</svg>
+
+							</div>
+
+							<div class="child" onclick="openagediv(5)">
+								<span class="child_nowage">退房时的年龄</span>
+								<svg class="icon icon-shangxiajiantou4" aria-hidden="true">
+									<use xlink:href="#icon-shangxiajiantou"></use>
+								</svg>
+
+							</div>
+						</li>
+						<li>
+							<div class="child" onclick="openagediv(6)">
+								<span class="child_nowage">退房时的年龄</span>
+								<svg class="icon icon-shangxiajiantou3" aria-hidden="true">
+									<use xlink:href="#icon-shangxiajiantou"></use>
+								</svg>
+
+							</div>
+
+							<div class="child" onclick="openagediv(7)">
+								<span class="child_nowage">退房时的年龄</span>
+								<svg class="icon icon-shangxiajiantou4" aria-hidden="true">
+									<use xlink:href="#icon-shangxiajiantou"></use>
+								</svg>
+
+							</div>
+						</li>
+						<li>
+							<div class="child" onclick="openagediv(8)">
+								<span class="child_nowage">退房时的年龄</span>
+								<svg class="icon icon-shangxiajiantou3" aria-hidden="true">
+									<use xlink:href="#icon-shangxiajiantou"></use>
+								</svg>
+
+							</div>
+
+							<div class="child" onclick="openagediv(9)">
+								<span class="child_nowage">退房时的年龄</span>
+								<svg class="icon icon-shangxiajiantou4" aria-hidden="true">
+									<use xlink:href="#icon-shangxiajiantou"></use>
+								</svg>
+
+							</div>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+
+			<div class="child_age ">
+				<ul>
+					<li onclick="getchild('0-退房时的年龄')">退房时的年龄</li>
+					<li onclick="getchild('0-0')">0</li>
+					<li onclick="getchild('0-1')">1</li>
+					<li onclick="getchild('0-2')">2</li>
+					<li onclick="getchild('0-3')">3</li>
+					<li onclick="getchild('0-4')">4</li>
+					<li onclick="getchild('0-5')">5</li>
+					<li onclick="getchild('0-6')">6</li>
+					<li onclick="getchild('0-7')">7</li>
+					<li onclick="getchild('0-8')">8</li>
+					<li onclick="getchild('0-9')">9</li>
+					<li onclick="getchild('0-10')">10</li>
+					<li onclick="getchild('0-11')">11</li>
+					<li onclick="getchild('0-12')">12</li>
+					<li onclick="getchild('0-13')">13</li>
+					<li onclick="getchild('0-14')">14</li>
+					<li onclick="getchild('0-15')">15</li>
+					<li onclick="getchild('0-16')">16</li>
+					<li onclick="getchild('0-17')">17</li>
+					<li onclick="getchild('0-18')">18</li>
+					<li onclick="getchild('0-19')">19</li>
+				</ul>
+			</div>
+
+			<div class="child_age child_age2 child_age_two">
+				<ul>
+					<li onclick="getchild('1-退房时的年龄')">退房时的年龄</li>
+					<li onclick="getchild('1-0')">0</li>
+					<li onclick="getchild('1-1')">1</li>
+					<li onclick="getchild('1-2')">2</li>
+					<li onclick="getchild('1-3')">3</li>
+					<li onclick="getchild('1-4')">4</li>
+					<li onclick="getchild('1-5')">5</li>
+					<li onclick="getchild('1-6')">6</li>
+					<li onclick="getchild('1-7')">7</li>
+					<li onclick="getchild('1-8')">8</li>
+					<li onclick="getchild('1-9')">9</li>
+					<li onclick="getchild('1-10')">10</li>
+					<li onclick="getchild('1-11')">11</li>
+					<li onclick="getchild('1-12')">12</li>
+					<li onclick="getchild('1-13')">13</li>
+					<li onclick="getchild('1-14')">14</li>
+					<li onclick="getchild('1-15')">15</li>
+					<li onclick="getchild('1-16')">16</li>
+					<li onclick="getchild('1-17')">17</li>
+					<li onclick="getchild('1-18')">18</li>
+					<li onclick="getchild('1-19')">19</li>
+				</ul>
+			</div>
+
+			<div class="child_age child_age_three">
+				<ul>
+					<li onclick="getchild('2-退房时的年龄')">退房时的年龄</li>
+					<li onclick="getchild('2-0')">0</li>
+					<li onclick="getchild('2-1')">1</li>
+					<li onclick="getchild('2-2')">2</li>
+					<li onclick="getchild('2-3')">3</li>
+					<li onclick="getchild('2-4')">4</li>
+					<li onclick="getchild('2-5')">5</li>
+					<li onclick="getchild('2-6')">6</li>
+					<li onclick="getchild('2-7')">7</li>
+					<li onclick="getchild('2-8')">8</li>
+					<li onclick="getchild('2-9')">9</li>
+					<li onclick="getchild('2-10')">10</li>
+					<li onclick="getchild('2-11')">11</li>
+					<li onclick="getchild('2-12')">12</li>
+					<li onclick="getchild('2-13')">13</li>
+					<li onclick="getchild('2-14')">14</li>
+					<li onclick="getchild('2-15')">15</li>
+					<li onclick="getchild('2-16')">16</li>
+					<li onclick="getchild('2-17')">17</li>
+					<li onclick="getchild('2-18')">18</li>
+					<li onclick="getchild('2-19')">19</li>
+				</ul>
+			</div>
+
+			<div class="child_age child_age2 child_age_four">
+				<ul>
+					<li onclick="getchild('3-退房时的年龄')">退房时的年龄</li>
+					<li onclick="getchild('3-0')">0</li>
+					<li onclick="getchild('3-1')">1</li>
+					<li onclick="getchild('3-2')">2</li>
+					<li onclick="getchild('3-3')">3</li>
+					<li onclick="getchild('3-4')">4</li>
+					<li onclick="getchild('3-5')">5</li>
+					<li onclick="getchild('3-6')">6</li>
+					<li onclick="getchild('3-7')">7</li>
+					<li onclick="getchild('3-8')">8</li>
+					<li onclick="getchild('3-9')">9</li>
+					<li onclick="getchild('3-10')">10</li>
+					<li onclick="getchild('3-11')">11</li>
+					<li onclick="getchild('3-12')">12</li>
+					<li onclick="getchild('3-13')">13</li>
+					<li onclick="getchild('3-14')">14</li>
+					<li onclick="getchild('3-15')">15</li>
+					<li onclick="getchild('3-16')">16</li>
+					<li onclick="getchild('3-17')">17</li>
+					<li onclick="getchild('3-18')">18</li>
+					<li onclick="getchild('3-19')">19</li>
+				</ul>
+			</div>
+
+
+			<div class="child_age child_age_five">
+				<ul>
+					<li onclick="getchild('4-退房时的年龄')">退房时的年龄</li>
+					<li onclick="getchild('4-0')">0</li>
+					<li onclick="getchild('4-1')">1</li>
+					<li onclick="getchild('4-2')">2</li>
+					<li onclick="getchild('4-3')">3</li>
+					<li onclick="getchild('4-4')">4</li>
+					<li onclick="getchild('4-5')">5</li>
+					<li onclick="getchild('4-6')">6</li>
+					<li onclick="getchild('4-7')">7</li>
+					<li onclick="getchild('4-8')">8</li>
+					<li onclick="getchild('4-9')">9</li>
+					<li onclick="getchild('4-10')">10</li>
+					<li onclick="getchild('4-11')">11</li>
+					<li onclick="getchild('4-12')">12</li>
+					<li onclick="getchild('4-13')">13</li>
+					<li onclick="getchild('4-14')">14</li>
+					<li onclick="getchild('4-15')">15</li>
+					<li onclick="getchild('4-16')">16</li>
+					<li onclick="getchild('4-17')">17</li>
+					<li onclick="getchild('4-18')">18</li>
+					<li onclick="getchild('4-19')">19</li>
+				</ul>
+			</div>
+
+			<div class="child_age child_age2 child_age_six">
+				<ul>
+					<li onclick="getchild('5-退房时的年龄')">退房时的年龄</li>
+					<li onclick="getchild('5-0')">0</li>
+					<li onclick="getchild('5-1')">1</li>
+					<li onclick="getchild('5-2')">2</li>
+					<li onclick="getchild('5-3')">3</li>
+					<li onclick="getchild('5-4')">4</li>
+					<li onclick="getchild('5-5')">5</li>
+					<li onclick="getchild('5-6')">6</li>
+					<li onclick="getchild('5-7')">7</li>
+					<li onclick="getchild('5-8')">8</li>
+					<li onclick="getchild('5-9')">9</li>
+					<li onclick="getchild('5-10')">10</li>
+					<li onclick="getchild('5-11')">11</li>
+					<li onclick="getchild('5-12')">12</li>
+					<li onclick="getchild('5-13')">13</li>
+					<li onclick="getchild('5-14')">14</li>
+					<li onclick="getchild('5-15')">15</li>
+					<li onclick="getchild('5-16')">16</li>
+					<li onclick="getchild('5-17')">17</li>
+					<li onclick="getchild('5-18')">18</li>
+					<li onclick="getchild('5-19')">19</li>
+				</ul>
+			</div>
+
+
+			<div class="child_age child_age_seven">
+				<ul>
+					<li onclick="getchild('6-退房时的年龄')">退房时的年龄</li>
+					<li onclick="getchild('6-0')">0</li>
+					<li onclick="getchild('6-1')">1</li>
+					<li onclick="getchild('6-2')">2</li>
+					<li onclick="getchild('6-3')">3</li>
+					<li onclick="getchild('6-4')">4</li>
+					<li onclick="getchild('6-5')">5</li>
+					<li onclick="getchild('6-6')">6</li>
+					<li onclick="getchild('6-7')">7</li>
+					<li onclick="getchild('6-8')">8</li>
+					<li onclick="getchild('6-9')">9</li>
+					<li onclick="getchild('6-10')">10</li>
+					<li onclick="getchild('6-11')">11</li>
+					<li onclick="getchild('6-12')">12</li>
+					<li onclick="getchild('6-13')">13</li>
+					<li onclick="getchild('6-14')">14</li>
+					<li onclick="getchild('6-15')">15</li>
+					<li onclick="getchild('6-16')">16</li>
+					<li onclick="getchild('6-17')">17</li>
+					<li onclick="getchild('6-18')">18</li>
+					<li onclick="getchild('6-19')">19</li>
+				</ul>
+			</div>
+
+			<div class="child_age child_age2 child_age_eight">
+				<ul>
+					<li onclick="getchild('7-退房时的年龄')">退房时的年龄</li>
+					<li onclick="getchild('7-0')">0</li>
+					<li onclick="getchild('7-1')">1</li>
+					<li onclick="getchild('7-2')">2</li>
+					<li onclick="getchild('7-3')">3</li>
+					<li onclick="getchild('7-4')">4</li>
+					<li onclick="getchild('7-5')">5</li>
+					<li onclick="getchild('7-6')">6</li>
+					<li onclick="getchild('7-7')">7</li>
+					<li onclick="getchild('7-8')">8</li>
+					<li onclick="getchild('7-9')">9</li>
+					<li onclick="getchild('7-10')">10</li>
+					<li onclick="getchild('7-11')">11</li>
+					<li onclick="getchild('7-12')">12</li>
+					<li onclick="getchild('7-13')">13</li>
+					<li onclick="getchild('7-14')">14</li>
+					<li onclick="getchild('7-15')">15</li>
+					<li onclick="getchild('7-16')">16</li>
+					<li onclick="getchild('7-17')">17</li>
+					<li onclick="getchild('7-18')">18</li>
+					<li onclick="getchild('7-19')">19</li>
+				</ul>
+			</div>
+
+			<div class="child_age child_age_nine">
+				<ul>
+					<li onclick="getchild('8-退房时的年龄')">退房时的年龄</li>
+					<li onclick="getchild('8-0')">0</li>
+					<li onclick="getchild('8-1')">1</li>
+					<li onclick="getchild('8-2')">2</li>
+					<li onclick="getchild('8-3')">3</li>
+					<li onclick="getchild('8-4')">4</li>
+					<li onclick="getchild('8-5')">5</li>
+					<li onclick="getchild('8-6')">6</li>
+					<li onclick="getchild('8-7')">7</li>
+					<li onclick="getchild('8-8')">8</li>
+					<li onclick="getchild('8-9')">9</li>
+					<li onclick="getchild('8-10')">10</li>
+					<li onclick="getchild('8-11')">11</li>
+					<li onclick="getchild('8-12')">12</li>
+					<li onclick="getchild('8-13')">13</li>
+					<li onclick="getchild('8-14')">14</li>
+					<li onclick="getchild('8-15')">15</li>
+					<li onclick="getchild('8-16')">16</li>
+					<li onclick="getchild('8-17')">17</li>
+					<li onclick="getchild('8-18')">18</li>
+					<li onclick="getchild('8-19')">19</li>
+				</ul>
+			</div>
+
+
+			<div class="child_age child_age2 child_age_ten">
+				<ul>
+					<li onclick="getchild('9-退房时的年龄')">退房时的年龄</li>
+					<li onclick="getchild('9-0')">0</li>
+					<li onclick="getchild('9-1')">1</li>
+					<li onclick="getchild('9-2')">2</li>
+					<li onclick="getchild('9-3')">3</li>
+					<li onclick="getchild('9-4')">4</li>
+					<li onclick="getchild('9-5')">5</li>
+					<li onclick="getchild('9-6')">6</li>
+					<li onclick="getchild('9-7')">7</li>
+					<li onclick="getchild('9-8')">8</li>
+					<li onclick="getchild('9-9')">9</li>
+					<li onclick="getchild('9-10')">10</li>
+					<li onclick="getchild('9-11')">11</li>
+					<li onclick="getchild('9-12')">12</li>
+					<li onclick="getchild('9-13')">13</li>
+					<li onclick="getchild('9-14')">14</li>
+					<li onclick="getchild('9-15')">15</li>
+					<li onclick="getchild('9-16')">16</li>
+					<li onclick="getchild('9-17')">17</li>
+					<li onclick="getchild('9-18')">18</li>
+					<li onclick="getchild('9-19')">19</li>
+				</ul>
+			</div>
+
+			<div class="search_container_four">搜索</div>
+		</div>
+		<div class="search_input">
+			<input type="checkbox" id="allSelect" class="chkbox" /> <label for="allSelect" class="search_checkbox"> 我是出差</label>
+		</div>
+
+	</div>
+	<!-- 内容区1-->
+	<div class="container_box">
+		<div class="container">
+			<div id="container_holiday">
+				<i class="iconfont icon-Deutsch-flag"></i>
+				<span>度假在即？<a href="#">年中优惠,省15%+</a>，了解一下!</span>
+				<i class="iconfont icon-ArtboardCopy" id="hide_i"></i>
+			</div>
+			<div class="fuSongXian">
+				<!-- 用于连接到目的地-->
+				<a href="#" class="link_id">
+
+				<h2>抚松县</h2>
+				<p>62家住宿</p>
+				<a href="#" class="fuSongXian_a">
+					<small>均价</small>
+					<span>530元</span>
+				</a>
+				<div class="fusongxian_none">
+					<div class="fsx_trigon"></div>
+					<span>搜索比较该目的地的住宿</span>
+				</div>
+				</a>
+			</div>
+
+			<div class="sanya">
+				<a href="#" class="link_id">
+
+				<h2>三亚</h2>
+				<p>896家住宿</p>
+				<a href="#" class="sanya_a">
+					<small>均价</small>
+					<span>508元</span>
+				</a>
+				<div class="sanya_none">
+					<div class="sy_trigon"></div>
+					<span>搜索比较该目的地的住宿</span>
+				</div>
+					</a>
+			</div>
+
+			<div class="eryuan">
+				<a href="#" class="link_id">
+
+				<h2>洱源</h2>
+				<p>62家住宿</p>
+				<a href="#" class="eryuan_a">
+					<small>均价</small>
+					<span>868元</span>
+				</a>
+				<div class="eryuan_none">
+					<div class="ey_trigon"></div>
+					<span>搜索比较该目的地的住宿</span>
+				</div>
+					</a>
+			</div>
+
+			<div class="dali">
+				<a href="#" class="link_id">
+				<h2>大理</h2>
+				<p>105家住宿</p>
+				<a href="#" class="dali_a">
+					<small>均价</small>
+					<span>668元</span>
+				</a>
+				<div class="dali_none">
+					<div class="dl_trigon"></div>
+					<span>搜索比较该目的地的住宿</span>
+				</div>
+					</a>
+			</div>
+
+			<div class="jinghongshi">
+				<a href="#" class="link_id">
+				<h2>景洪市</h2>
+				<p>653家住宿</p>
+				<a href="#" class="jinghongshi_a">
+					<small>均价</small>
+					<span>568元</span>
+				</a>
+				<div class="jinghongshi_none">
+					<div class="jhs_trigon"></div>
+					<span>搜索比较该目的地的住宿</span>
+				</div>
+					</a>
+			</div>
+
+
+		</div>
+	</div>
+
+	<div class="container_box2">
+
+		<div class="tip2"></div>
+
+		<div class="container2">
+
+			<div class="container2_left">
+
+				<img src="../images/index/booking_reg.jpg" class="img_reg">
+				<p>在Booking.com注册您的住宿</p>
+				<h3>注册、赚钱，为梦想买单。</h3>
+				<button><a href="#">了解更多</a></button>
+			</div>
+			<div class="container2_right">
+				<div class="container2_right_up">
+					<img src="../images/index/reg_logo.png" class="img_reg_logo">
+					<a href="#" class="container2_right_up_a">
+						<p>注册即可体验最佳旅行</p>
+						<h5>我们的电子报帮你提早计划，获取最佳住宿选择</h5>
+					</a>
+				</div>
+				<div class="container2_right_dowm">
+					<form action="#" method="get">
+							<input type="text" placeholder="输入电子邮箱地址" class="container2_right_dowm_inp user_email" data-title="您的电子邮箱地址">
+						<button class="container2_right_dowm_btn">订阅电子报!</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div>
+
+	<div class="container_box3">
+		<div class="container3">
+			<h1 class="container3_h1">精彩下一站，灵感这里找</h1>
+			<div class="container3_01">
+				<div class="container3_img1">
+				<a href="#" class="container3_img1_a" >
+				<p class="container3_img1_date">2018年1月2日</p>
+				<h3 class="container3_img1_h3">情迷美利坚 | 最美自然风光</h3>
+				<p class="container3_img1_p1">如果你不曾到过美国,不曾为其壮丽的大自然感动</p>
+				<p class="container3_img1_p2">过,一定要收下这篇旅行者攻略</p>
+				</a>
+				</div>
+			</div>
+			<div class="container3_02">
+				<div class="container3_img2">
+					<a href="#" class="container3_img2_a" >
+						<p class="container3_img2_date">2017年12月28日</p>
+						<h3 class="container3_img2_h3">澳大利亚不可错过的自然之美</h3>
+						<p class="container3_img2_p1">在这些旅友们甄选的人气目的地，发现澳大利亚令人</p>
+						<p class="container3_img2_p2">惊叹的自然美景</p>
+					</a>
+				</div>
+			</div>
+
+			<div class="container3_03">
+				<div class="container3_img3">
+					<a href="#" class="container3_img3_a" >
+						<p class="container3_img3_date">2017年12月14日</p>
+						<h3 class="container3_img3_h3">咖啡狂人旅行宝典</h3>
+						<p class="container3_img3_p1"></p>
+						<p class="container3_img3_p2">6大终极目的地，只为那一口馥郁香醇</p>
+					</a>
+				</div>
+			</div>
+
+
+			<div class="container3_04">
+				<div class="container3_img4">
+					<a href="#" class="container3_img4_a" >
+						<p class="container3_img4_date">2017年12月14日</p>
+						<h3 class="container3_img4_h3">7快蛋糕带你环游世界</h3>
+						<p class="container3_img4_p1"></p>
+						<p class="container3_img4_p2">以地名命名的美味蛋糕,边走边吃不怕胖</p>
+					</a>
+				</div>
+			</div>
+
+			<div class="container3_05">
+				<div class="container3_img5">
+					<a href="#" class="container3_img5_a" >
+						<p class="container3_img5_date">2017年12月4日</p>
+						<h3 class="container3_img5_h3">来一场冰川征服之旅</h3>
+						<p class="container3_img5_p1"></p>
+						<p class="container3_img5_p2">遇见大野洋子曾经唱过的景象：冰 冰 冰 冰 冰 冰</p>
+					</a>
+				</div>
+			</div>
+
+			<div class="container3_06">
+				<a href="#" class="container3_06_a">查看更多</a>
+			</div>
+
+
+		</div>
+	</div>
+
+	<!-- 注册登录模块代码-->
+	<div id="LARid" class="LAR-Background">
+		<div class="LAR-Container">
+			<ul class="LAR-ul">
+				<a href="javascript:void(0)">
+					<li id="loginLi" onclick="showLogin()" class="LAR-li">登录</li>
+					<li id="registerLi" onclick="showRegister()" class="LAR-li">注册</li>
+				</a>
+			</ul>
+			<div id="closebtn" class="closeButton"><a href="#" title="关闭"><img src="../images/close.png" class="closeImg"></a></div>
+			<div id="LAR-login">
+				<div class="LAR-contant">
+					<form name="loginForm" action="" onsubmit="" method="POST">
+						<span>电子邮箱/手机号</span>
+						<input id="emailInput" type="text" name="emailOrphone"><br>
+						<span>Booking.com密码</span>
+						<input id="pwdInput" type="password" name="pwd"><br>
+						<a href="#">想不起密码？</a><br>
+						<a href="javascript:void(0)" class="sub-btn">登录</a><br>
+					</form>
+					<span class="span-line">
+						—————————————&nbsp;&nbsp;或一键登录&nbsp;&nbsp;—————————————
+					</span>
+					<a href="javascript:void(0)" class="weicharLogin"><img src="../images/weichar.png">微信登录</a>
+				</div>
+				<hr>
+				<span class="span-tip">输入<a href="">订单确认号和PIN码</a>即可管理订单</span>
+				<span class="span-tip2">登录帐户即代表您同意本公司的<a href="#">相关条款</a>以及<a href="#">隐私声明</a></span>
+			</div>
+
+			<div id="LAR-register">
+				<div class="LAR-contant">
+					<form name="registerForm" action="" onsubmit="" method="POST">
+						<span>电子邮箱/手机号</span>
+						<input id="emailInput2" type="text" name="emailOrphone"><br>
+						<span>创建密码</span>
+						<input id="pwdInput2" type="password" name="pwd"><br>
+						<br>
+						<a href="javascript:void(0)" class="sub-btn">注册账号</a><br>
+					</form>
+					<span class="span-line">
+						———————————————&nbsp;&nbsp;或&nbsp;&nbsp;———————————————
+					</span>
+					<a href="javascript:void(0)" class="weicharLogin"><img src="../images/weichar.png">微信登录</a>
+				</div>
+				<hr>
+				<span class="span-tip">
+						还没试过<a href="#">Booking.com商旅服务？</a><br>
+						输入<a href="#">订单确认号和PIN码</a>即可管理订单
+				</span>
+				<span class="span-tip2">登录帐户即代表您同意本公司的<a href="#">相关条款</a>以及<a href="#">隐私声明</a></span>
+				<br>
+				<hr>
+				<span class="span-tip">
+						在Booking.com出租你的住宿 <a href="#">上线我的住宿</a>
+				</span>
+			</div>
+		</div>
+	</div>
+
+	<script src="../js/NavBar.js"></script>
+	<script src="../js/index_container.js"></script>
+</div>
+</body>
+</html>
