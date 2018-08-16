@@ -1,3 +1,31 @@
+.tips{
+    z-index: 1;
+    position: absolute;
+    /*height: 80px;*/
+    /*line-height: 40px;*/
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #193154;
+    box-shadow: 0 0 8px #000000;
+    font-size: small;
+    color: white;
+}
+
+.tip3{
+    z-index: 10;
+    position: absolute;
+    width: 300px;
+    /*line-height: 40px;*/
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #383838;
+    box-shadow: 0 0 8px #000000;
+    font-size: small;
+    color: white;
+}
+
+
+
 .user_name{
     margin-left: -25px;
     color: white;
