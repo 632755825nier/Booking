@@ -66,12 +66,182 @@
         .Model {
             width: 100%;
             height: auto;
-            background-color: #E9F0FA;
             overflow:auto;
         }
 
+/************************个人中心**************************/
         #personalCenter{
+            /*display: none;*/
+            background-color: #F4F4F4;
+        }
+
+        .PC-left {
+            position: relative;
+            left: 10.5%;
+            width: 320px;
+            height: 1000px;
+            float: left;
+        }
+
+        .modifyPD {
+            width: 300px;
+            height: auto;
+            margin: 20px auto;
+            background-color: white;
+            border: 1px solid #E8E8E8;
+            border-radius: 5px;
+        }
+
+        .modifyPD-head {
+            width: 280px;
+            height: 80px;
+            margin: 10px;
+        }
+
+        .modifyPD-head-img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50px;
+            background-color: #077812;
+            margin: 0px 10px;
+            float: left;
+        }
+
+        .modifyPD-head-btn {
+            width: auto;
+            height: 80px;
+            line-height: 80px;
+        }
+
+        .modifyPD-head-btn a:hover {
+            color: #8383A1;
+        }
+
+        .modifyPD-body {
+            width: 280px;
+            height: auto;
+            margin: 10px;
+            background-color: #F7F7F7;
+            padding-bottom: 10px;
+        }
+
+        .modifyPD-body-proBar {
+            width: 260px;
+            height: auto;
+            margin: 10px auto;
+        }
+
+        .modifyPD-body-proBar p{
+            color: #8391AD;
+            font-size: 16px;
+        }
+
+        .porBar {
+            width: 100%;
+            height: 10px;
+            margin: 10px auto;
+            background-color: white;
+            border-radius: 5px;
+        }
+
+        .finish {
+            width: 10%;
+            height: 100%;
+            background-color: #96D99D;
+            border-radius: 5px;
+        }
+
+        .modifyPD-body-con {
+            width: 260px;
+            height: auto;
+            margin: 8px auto;
+        }
+
+        .modifyPD-body-con a:hover {
+            color: #8383A1;
+        }
+
+        .modifyPD-body-con p {
+            box-sizing: border-box;
+            padding-left: 20px;
+            font-size: 14px;
+            color: #8383A1;
+        }
+
+        .PC-right {
+            position: relative;
+            right: 10.5%;
+            width: 850px;
+            height: 800px;
+            float: right;
+        }
+
+        .PCInfo {
+            width: 830px;
+            height: auto;
+            margin: 20px auto;
+        }
+
+        .info-head {
+            box-sizing: border-box;
+            width: auto;
+            height: 40px;
+            padding-top: 10px;
+        }
+
+        .info-head p {
+            font-size: 25px;
+            color: #8383A1;
+        }
+
+        .info-body {
+            width: 100%;
+            height: auto;
+            margin: 10px 0px;
+        }
+
+        .first-info-con {
+            width: 828px;
+            height: 276px;
+            border: 1px solid #CCE1FF;
+        }
+
+        .first-info-con a {
+            display: block;
+            width: 276px;
+            height: 276px;
+            float: left;
+            text-align: center;
+            background-color: white;
+        }
+
+        .first-info-con-icon {
+            color: black;
+            height: 80px;
+            width: 80px;
+            margin: 0px auto;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border: 1px solid;
+        }
+
+        .first-info-con-p1 {
+            color: black;
+            font-size: 18px;
+        }
+
+        .first-info-con-p2 {
+            color: black;
+            width: 200px;
+            margin: 0px auto;
+            font-size: 14px;
+            padding-top: 30px;
+        }
+
+/*************************设置****************************/
+        #install{
             display: none;
+            background-color: #E9F0FA;
         }
 
         .InstallBar {
@@ -683,9 +853,69 @@
     </div>
 </div>
 
-<!--个人中心-->
+<!--单个选项卡内容：个人中心-->
 <div class="Model" id="personalCenter">
-
+    <div class="PC-left">
+        <div class="modifyPD">
+            <div class="modifyPD-head">
+                <div class="modifyPD-head-img">
+                </div>
+                <div class="modifyPD-head-btn">
+                    <a href="javascript:void(0)">修改个人资料</a>
+                </div>
+            </div>
+            <div class="modifyPD-body">
+                <div class="modifyPD-body-proBar">
+                    <p>已完成10%</p>
+                    <div class="porBar">
+                        <div class="finish"></div>
+                    </div>
+                </div>
+                <div class="modifyPD-body-con">
+                    <a href="javascript:void(0)">上传头像照</a>
+                    <p>选好头像照秀出你的高颜值。 </p>
+                </div>
+                <div class="modifyPD-body-con">
+                    <a href="javascript:void(0)">添加信用卡信息</a>
+                    <p>保存支付信息，下次无需重复填写，预订速度快到飞起！（请放心，你的支付信息很安全！）</p>
+                </div>
+                <div class="modifyPD-body-con">
+                    <a href="javascript:void(0)">填写昵称</a>
+                    <p>你可以随时修改显示在点评中的昵称。</p>
+                </div>
+                <div class="modifyPD-body-con">
+                    <a href="javascript:void(0)">填写名字</a>
+                    <p>告诉我们该如何称呼你</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="PC-right">
+        <div class="PCInfo">
+            <div class="info-head">
+                <p>欢迎来到Booing.com!</p>
+            </div>
+            <div class="info-body">
+                <div class="first-info-con">
+                    <a href="javascript:void(0)" name="search">
+                        <div class="first-info-con-icon">图片</div>
+                        <p class="first-info-con-p1">网罗全球特价</p>
+                        <p class="first-info-con-p2">登录后即可解锁专属优惠</p>
+                    </a>
+                    <a href="javascript:void(0)" name="addPI">
+                        <div class="first-info-con-icon">图片</div>
+                        <p class="first-info-con-p1">添加个人信息</p>
+                        <p class="first-info-con-p2">添加个人信息，助你快读预订，还可以根据你的设置为你特别推荐哦！</p>
+                    </a>
+                    <a href="javascript:void(0)" name="download">
+                        <div class="first-info-con-icon">图片</div>
+                        <p class="first-info-con-p1">下载移动app</p>
+                        <p class="first-info-con-p2">电子确认信在手，查看订单更便捷！</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <!--单个选项卡内容：设置-->
@@ -1015,6 +1245,25 @@
 </div>
 
 <script>
+//    *****************个人中心****************
+    //        设置首个内容上浮效果
+    $(document).ready(function(){
+        $(".first-info-con a").mouseover(function (){
+           $(this).css({"background-color":"#0077CC"});
+            $(this).children(".first-info-con-icon").css({"margin-top":"30px","color":"white"});
+            $(this).children(".first-info-con-p1").css({"margin-top":"-5px","color":"white"});
+            $(this).children(".first-info-con-p2").css({"margin-top":"-10px","color":"white"});
+        });
+
+        $(".first-info-con a").mouseleave(function (){
+            $(this).css({"background-color":"white"});
+            $(this).children(".first-info-con-icon").css({"margin-top":"40px","color":"black"});
+            $(this).children(".first-info-con-p1").css({"margin-top":"0px","color":"black"});
+            $(this).children(".first-info-con-p2").css({"margin-top":"0px","color":"black"});
+        });
+    })
+
+//    *******************设置*****************
     //        设置选项卡：左菜单的固定
     $(document).ready(function () {
         $(window).bind("scroll", function () {
