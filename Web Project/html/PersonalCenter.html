@@ -11,524 +11,11 @@
     <script src="../js/booking_com.js" type="text/javascript"></script>
     <link href="../res/icon/index_icon/iconfont.css" rel="stylesheet">
     <link href="../css/index_container.css" rel="stylesheet">
+    <link href="../css/PersonalCenter.css" rel="stylesheet">
+    <link href="../css/PersonalCenterIcon.css" rel="stylesheet">
 
     <title>个人中心：设置</title>
 
-    <style>
-        * {
-            /*box-sizing: border-box;*/
-            margin: 0px;
-            padding: 0px;
-        }
-
-        a {
-            /*display: block;*/
-            text-decoration: none;
-            color: #0099E0;
-        }
-
-        .NavBar {
-            width: 100%;
-            height: 48px;
-            background-color: white;
-        }
-
-        .NavBar a{
-            display: block;
-        }
-
-        .BarContent {
-            width: 79%;
-            height: 44px;
-            margin: 2px auto;
-        }
-
-        .BarUl {
-            width: 100%;
-            height: 100%;
-            list-style: none;
-        }
-
-        .BarLi {
-            width: auto;
-            height: 44px;
-            line-height: 44px;
-            font-size: 14px;
-            margin: 0px;
-            margin-right: 20px;
-            float: left;
-        }
-
-        .BarLi:hover {
-            color: black;
-        }
-
-        .Model {
-            width: 100%;
-            height: auto;
-            overflow:auto;
-        }
-
-/************************个人中心**************************/
-        #personalCenter{
-            /*display: none;*/
-            background-color: #F4F4F4;
-        }
-
-        .PC-left {
-            position: relative;
-            left: 10.5%;
-            width: 320px;
-            height: 1000px;
-            float: left;
-        }
-
-        .modifyPD {
-            width: 300px;
-            height: auto;
-            margin: 20px auto;
-            background-color: white;
-            border: 1px solid #E8E8E8;
-            border-radius: 5px;
-        }
-
-        .modifyPD-head {
-            width: 280px;
-            height: 80px;
-            margin: 10px;
-        }
-
-        .modifyPD-head-img {
-            width: 80px;
-            height: 80px;
-            border-radius: 50px;
-            background-color: #077812;
-            margin: 0px 10px;
-            float: left;
-        }
-
-        .modifyPD-head-btn {
-            width: auto;
-            height: 80px;
-            line-height: 80px;
-        }
-
-        .modifyPD-head-btn a:hover {
-            color: #8383A1;
-        }
-
-        .modifyPD-body {
-            width: 280px;
-            height: auto;
-            margin: 10px;
-            background-color: #F7F7F7;
-            padding-bottom: 10px;
-        }
-
-        .modifyPD-body-proBar {
-            width: 260px;
-            height: auto;
-            margin: 10px auto;
-        }
-
-        .modifyPD-body-proBar p{
-            color: #8391AD;
-            font-size: 16px;
-        }
-
-        .porBar {
-            width: 100%;
-            height: 10px;
-            margin: 10px auto;
-            background-color: white;
-            border-radius: 5px;
-        }
-
-        .finish {
-            width: 10%;
-            height: 100%;
-            background-color: #96D99D;
-            border-radius: 5px;
-        }
-
-        .modifyPD-body-con {
-            width: 260px;
-            height: auto;
-            margin: 8px auto;
-        }
-
-        .modifyPD-body-con a:hover {
-            color: #8383A1;
-        }
-
-        .modifyPD-body-con p {
-            box-sizing: border-box;
-            padding-left: 20px;
-            font-size: 14px;
-            color: #8383A1;
-        }
-
-        .PC-right {
-            position: relative;
-            right: 10.5%;
-            width: 850px;
-            height: 800px;
-            float: right;
-        }
-
-        .PCInfo {
-            width: 830px;
-            height: auto;
-            margin: 20px auto;
-        }
-
-        .info-head {
-            box-sizing: border-box;
-            width: auto;
-            height: 40px;
-            padding-top: 10px;
-        }
-
-        .info-head p {
-            font-size: 25px;
-            color: #8383A1;
-        }
-
-        .info-body {
-            width: 100%;
-            height: auto;
-            margin: 10px 0px;
-        }
-
-        .first-info-con {
-            width: 828px;
-            height: 276px;
-            border: 1px solid #CCE1FF;
-        }
-
-        .first-info-con a {
-            display: block;
-            width: 276px;
-            height: 276px;
-            float: left;
-            text-align: center;
-            background-color: white;
-        }
-
-        .first-info-con-icon {
-            color: black;
-            height: 80px;
-            width: 80px;
-            margin: 0px auto;
-            margin-top: 40px;
-            margin-bottom: 20px;
-            border: 1px solid;
-        }
-
-        .first-info-con-p1 {
-            color: black;
-            font-size: 18px;
-        }
-
-        .first-info-con-p2 {
-            color: black;
-            width: 200px;
-            margin: 0px auto;
-            font-size: 14px;
-            padding-top: 30px;
-        }
-
-/*************************设置****************************/
-        #install{
-            display: none;
-            background-color: #E9F0FA;
-        }
-
-        .InstallBar {
-            position: fixed;
-            top: 140px;
-            left: 10.5%;
-            width: 200px;
-            height: 100%;
-            background-color: white;
-        }
-
-        .InstallBarUl {
-            width: 100%;
-            height: 100%;
-            list-style: none;
-            margin-top: 20px;
-        }
-
-        .InstallBarUl li {
-            display: block;
-            width: 100%;
-            height: 36px;
-            line-height: 36px;
-            font-size: 16px;
-            padding: 3px 20px;
-        }
-
-        .InstallBarUl li:hover{
-            background-color: #E9F0FA;
-            color: #0099E0;
-        }
-
-        .ISInfo {
-            position: relative;
-            float: right;
-            margin-top: 40px;
-            right: 10.5%;
-            width: 64.5%;
-            height: auto;
-            background-color: white;
-        }
-
-        .ISInfo_head {
-            box-sizing: border-box;
-            width: 100%;
-            height: 100px;
-            background-color: #FBFBFB;
-            border-bottom: 1px solid #E3E5E4;
-        }
-
-        .ISInfo_title {
-            position: relative;
-            width: auto;
-            height: 26px;
-            line-height: 26px;
-            top: 24px;
-            left: 20px;
-            font-size: 26px;
-        }
-
-        .ISInfo_subheading {
-            position: relative;
-            width: auto;
-            height: 14px;
-            line-height: 14px;
-            top:30px;
-            left: 20px;
-            font-size: 14px;
-            color: #7F7F7F;
-        }
-
-        .ISInfo_content {
-            width: 100%;
-            height: auto;
-            margin: 20px 0px;
-        }
-
-        .ISInfo_content_row {
-            width: 95%;
-            height: auto;
-            margin: 20px auto;
-        }
-
-        .row_name {
-            position: relative;
-            display: inline-block;
-            width: 200px;
-            height: auto;
-            font-size: 14px;
-        }
-
-        .row_button {
-            position: relative;
-            display: inline-block;
-            box-sizing: border-box;
-            width: auto;
-            height: auto;
-            padding: 8px 10px;
-            border: 1px solid #0077CC;
-            border-radius: 3px;
-            text-align: center;
-            font-size: 14px;
-        }
-
-        .row_tip {
-            position: relative;
-            display: inline-block;
-            font-size: 14px;
-            color: #7F7F7F;
-        }
-
-        .row_input {
-            position: relative;
-            display: inline-block;
-            box-sizing: border-box;
-            padding: 2px 8px;
-            width: 260px;
-            height: 35px;
-            border: 1px solid #D7D7D7;
-            border-radius: 5px;
-            left: 80px;
-        }
-
-        .row_select {
-            position: relative;
-            display: inline-block;
-            box-sizing: border-box;
-            padding: 2px 8px;
-            width: auto;
-            height: 35px;
-            border: 1px solid #D7D7D7;
-            border-radius: 5px;
-            left: 80px;
-        }
-
-        .first_row_headImg {
-            position: relative;
-            display: inline-block;
-            width: 150px;
-            height: 150px;
-            left: 80px;
-            background-color: #005999;
-        }
-
-        .first_row_headImg img{
-            width: 100%;
-            height: 100%;
-        }
-
-        .first_row_setHeadImg {
-            top: -40px;
-            left: 100px;
-        }
-
-        .first_row_tip_Img {
-            top: -8px;
-            left: 20px;
-        }
-
-        .first_row_tip_name {
-            display: block;
-            top: 4px;
-            left: 285px;
-        }
-
-        .second_row_address {
-            display: inline-block;
-            width: auto;
-            height: 40px;
-            line-height: 40px;
-            font-size: 14px;
-            margin-left: 80px;
-        }
-
-        .second_row_changeAd {
-            display: block;
-            width: 120px;
-            left: 280px;
-        }
-
-        .second_Ad_card {
-            box-sizing: border-box;
-            width: 400px;
-            height: auto;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            background-color: #EEEEEE;
-            margin-left: 250px;
-            display: none;
-        }
-
-        .second_Ad_card p {
-            display: block;
-            margin-top: 16px;
-            margin-left: 12px;
-            font-size: 14px;
-        }
-
-        .second_Ad_card input {
-            box-sizing: border-box;
-            width: 360px;
-            height: 36px;
-            line-height: 36px;
-            font-size: 14px;
-            border-radius: 3px;
-            padding: 2px 10px;
-            margin-left: 12px;
-        }
-
-        .second_Ad_card select {
-            box-sizing: border-box;
-            width: 360px;
-            height: 36px;
-            line-height: 36px;
-            font-size: 14px;
-            border: 1px solid #CCCCCC;
-            border-radius: 3px;
-            padding: 2px 10px;
-            margin-left: 12px;
-        }
-
-        .second_Ad_card a {
-            margin-top: 20px;
-            margin-left: 12px;
-        }
-
-        a[name="save"] {
-            background-color: #0077CC;
-            color: white;
-        }
-        a[name="exit"] {
-            background-color: white;
-        }
-
-        .third_row_addCard{
-            display: block;
-            background-color: #0077CC;
-            color: white;
-        }
-
-        .four_row_checkbox{
-            display: inline-block;
-            width: auto;
-            font-size: 14px;
-            vertical-align: middle;
-            margin-left: 80px;
-            margin-top: -3px;
-        }
-
-        .four_setFacility{
-            box-sizing: border-box;
-            width: 600px;
-            height: auto;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            background-color: #E9F0FA;
-            margin-left: 280px;
-            display: none;
-        }
-
-        .four_row_facility_model{
-            display: inline-block;
-            width: 200px;
-            height: auto;
-            margin-right: 90px;
-        }
-
-        .four_setFacility input{
-            width: auto;
-            font-size: 14px;
-            vertical-align: middle;
-            margin-top: -3px;
-        }
-        
-        .four_button{
-            display: block;
-            width: 700px;
-        }
-
-        .last{
-            background-color: #E9F0FA;
-            left: 20px;
-            font-size: 14px;
-        }
-
-
-    </style>
 </head>
 <body>
 <!--最高头部-->
@@ -834,7 +321,7 @@
 <div class="NavBar">
     <div class="BarContent">
         <ul class="BarUl">
-            <a href="javascript:voud(0)">
+            <a href="javascript:voud(0)" onclick="openModel(event, 'personalCenter')">
                 <li class="BarLi">我的个人中心</li>
             </a>
             <a href="javascript:voud(0)">
@@ -843,7 +330,7 @@
             <a href="javascript:voud(0)">
                 <li class="BarLi">评语</li>
             </a>
-            <a href="javascript:voud(0)">
+            <a href="javascript:voud(0)" onclick="openModel(event, 'install')">
                 <li class="BarLi">设置</li>
             </a>
             <a href="javascript:voud(0)">
@@ -859,6 +346,7 @@
         <div class="modifyPD">
             <div class="modifyPD-head">
                 <div class="modifyPD-head-img">
+                    <img src="../res/images/PersonCenter/cricleHead.png">
                 </div>
                 <div class="modifyPD-head-btn">
                     <a href="javascript:void(0)">修改个人资料</a>
@@ -872,21 +360,50 @@
                     </div>
                 </div>
                 <div class="modifyPD-body-con">
-                    <a href="javascript:void(0)">上传头像照</a>
+                    <a href="javascript:void(0)" class="iconfont icon-tianjia"> 上传头像照</a>
                     <p>选好头像照秀出你的高颜值。 </p>
                 </div>
                 <div class="modifyPD-body-con">
-                    <a href="javascript:void(0)">添加信用卡信息</a>
+                    <a href="javascript:void(0)" class="iconfont icon-tianjia"> 添加信用卡信息</a>
                     <p>保存支付信息，下次无需重复填写，预订速度快到飞起！（请放心，你的支付信息很安全！）</p>
                 </div>
                 <div class="modifyPD-body-con">
-                    <a href="javascript:void(0)">填写昵称</a>
+                    <a href="javascript:void(0)" class="iconfont icon-tianjia"> 填写昵称</a>
                     <p>你可以随时修改显示在点评中的昵称。</p>
                 </div>
                 <div class="modifyPD-body-con">
-                    <a href="javascript:void(0)">填写名字</a>
+                    <a href="javascript:void(0)" class="iconfont icon-tianjia"> 填写名字</a>
                     <p>告诉我们该如何称呼你</p>
                 </div>
+            </div>
+        </div>
+
+        <div class="SelectHotelModel">
+            <p class="SHM-head">缤纷四季优惠搜不停</p>
+            <div class="SHM-body">
+                <form action="" method="POST">
+                    <p>目的地、住宿名称或地址：</p>
+                    <input type="text" name="destination" placeholder="例如：城市、地区或特定酒店...">
+                    <p>入住日期</p>
+                    <a href="javascript:void(0)"><div class="iconfont icon-rili"></div><p id="liveTime">入住日期</p><div class="iconfont icon-xiasanjiao"></div></a>
+                    <p>退房日期</p>
+                    <a href="javascript:void(0)"><div class="iconfont icon-rili"></div><p id="leaveTime">退房日期</p><div class="iconfont icon-xiasanjiao"></div></a>
+                    <div class="tripType">
+                        <p>出行类别:</p>
+                        <input type="radio" name="eveTrip"> 出差
+                        <input type="radio" name="ideTrip"> 自由行
+                        <div class="iconfont icon-wh"></div>
+                    </div>
+                    <div class="roomType">
+                        <p>客房</p>
+                        <select></select>
+                        <p>成人</p>
+                        <select></select>
+                        <p>儿童</p>
+                        <select></select>
+                    </div>
+                    <input type="submit" value="搜索">
+                </form>
             </div>
         </div>
     </div>
@@ -898,20 +415,47 @@
             <div class="info-body">
                 <div class="first-info-con">
                     <a href="javascript:void(0)" name="search">
-                        <div class="first-info-con-icon">图片</div>
+                        <div class="first-info-con-icon">
+                            <img src="../res/images/PersonCenter/sousuo.png">
+                        </div>
                         <p class="first-info-con-p1">网罗全球特价</p>
                         <p class="first-info-con-p2">登录后即可解锁专属优惠</p>
                     </a>
                     <a href="javascript:void(0)" name="addPI">
-                        <div class="first-info-con-icon">图片</div>
+                        <div class="first-info-con-icon">
+                            <img src="../res/images/PersonCenter/head.png">
+                        </div>
                         <p class="first-info-con-p1">添加个人信息</p>
                         <p class="first-info-con-p2">添加个人信息，助你快读预订，还可以根据你的设置为你特别推荐哦！</p>
                     </a>
                     <a href="javascript:void(0)" name="download">
-                        <div class="first-info-con-icon">图片</div>
+                        <div class="first-info-con-icon">
+                            <img src="../res/images/PersonCenter/app.png">
+                        </div>
                         <p class="first-info-con-p1">下载移动app</p>
                         <p class="first-info-con-p2">电子确认信在手，查看订单更便捷！</p>
                     </a>
+                </div>
+            </div>
+        </div>
+        <div class="PCInfo">
+            <div class="info-head">
+                <p>即刻下载iPhone、iPad或安卓app</p>
+            </div>
+            <div class="info-body">
+                <div class="second-info-con">
+                    <p>电子确认信、每日优惠和更多便利功能一手把握！</p>
+                    <div class="PhoneAndEmail">
+                        <div class="second-Model">
+                            <input type="text" placeholder="您的手机号码">
+                            <a href="javascript:void(0)">发送短信</a>
+                        </div>
+                        <p>或</p>
+                        <div class="second-Model">
+                            <input type="text" placeholder="您的电子邮箱地址">
+                            <a href="javascript:void(0)">发送电子邮件</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -924,22 +468,22 @@
     <div class="InstallBar">
         <ul class="InstallBarUl">
             <a href="#PI">
-                <li>个人信息</li>
+                <li>个人信息 <div class="InstallBaricon iconfont icon-touxiang"></div></li>
             </a>
             <a href="#CC">
-                <li>信用卡</li>
+                <li>信用卡 <div class="InstallBaricon iconfont icon-remind"></li>
             </a>
             <a href="#PS">
-                <li>支付设置</li>
+                <li>支付设置 <div class="InstallBaricon iconfont icon-shezhi"></li>
             </a>
             <a href="#TP">
-                <li>您的旅行偏好</li>
+                <li>您的旅行偏好 <div class="InstallBaricon iconfont icon-bao"></li>
             </a>
             <a href="#PACS">
-                <li>密码和货币设置</li>
+                <li>密码和货币设置 <div class="InstallBaricon iconfont icon-shezhi"></li>
             </a>
             <a href="#SNS">
-                <li>社交网络设置</li>
+                <li>社交网络设置 <div class="InstallBaricon iconfont icon-shouji"></li>
             </a>
         </ul>
     </div>
@@ -958,16 +502,16 @@
             <div class="ISInfo_content_row">
                 <p class="row_name">个人照片</p>
                 <div class="first_row_headImg">
-                    <img src="">
+                    <img src="../res/images/PersonCenter/bigHead.png">
                 </div>
-                <a class="row_button first_row_setHeadImg">更改照片</a>
-                <p class="row_tip first_row_tip_Img">上传一张美美的个人照吧</p>
+                <a class="row_button first_row_setHeadImg iconfont icon-xiangji"> 更改照片</a>
+                <p class="row_tip first_row_tip_Img iconfont icon-remind"> 上传一张美美的个人照吧</p>
             </div>
 
             <div class="ISInfo_content_row">
                 <p class="row_name">显示名称</p>
                 <input type="text" class="row_input">
-                <p class="row_tip first_row_tip_name">昵称可以随时修改</p>
+                <p class="row_tip first_row_tip_name iconfont icon-remind"> 昵称可以随时修改</p>
             </div>
 
             <div class="ISInfo_content_row">
@@ -981,7 +525,7 @@
                 <select id="select_year" class="row_select">
                     <option value="0"></option>
                 </select>
-                <p class="row_tip first_row_tip_name">请放心，我们仅显示你的年龄范围（如："25-30岁"）</p>
+                <p class="row_tip first_row_tip_name iconfont icon-remind"> 请放心，我们仅显示你的年龄范围（如："25-30岁"）</p>
             </div>
 
             <div class="ISInfo_content_row">
@@ -1010,7 +554,7 @@
                         <option value="India">印度</option>
                         <option value="Guatemala">危地马拉</option>
                 </select>
-                <p class="row_tip first_row_tip_name">告诉大家您来自哪里</p>
+                <p class="row_tip first_row_tip_name iconfont icon-remind"> 告诉大家您来自哪里</p>
             </div>
         </div>
     </div>
@@ -1054,7 +598,7 @@
                 <p class="second_row_address" id="showAddress">
                    中国
                 </p>
-                <a href="javascript:void(0)" class="row_button second_row_changeAd" id="changAdBtn">更改家庭住址</a>
+                <a href="javascript:void(0)" class="row_button second_row_changeAd iconfont icon-xiao47" id="changAdBtn"> 更改家庭住址</a>
                 <div class="second_Ad_card">
                     <p>地址</p>
                     <input type="text" id="address">
@@ -1081,7 +625,7 @@
             <div class="ISInfo_title">
                 信用卡
             </div>
-            <div class="ISInfo_subheading">
+            <div class="ISInfo_subheading iconfont icon-suo">
                 您的信用卡信息已妥善保存。为方便今后通过Booking.com预订住宿和附加服务，系统将自动为您填写信用卡信息。
             </div>
         </div>
@@ -1093,7 +637,7 @@
                 <hr>
             </div>
             <div class="ISInfo_content_row">
-                <a href="javascript:void(0)" class="row_button third_row_addCard">添加卡片</a>
+                <a href="javascript:void(0)" class="row_button third_row_addCard iconfont icon-tianjia"> 添加卡片</a>
             </div>
         </div>
     </div>
@@ -1164,7 +708,7 @@
             <div class="ISInfo_content_row">
                 <p class="row_name">首选设施</p>
                 <p class="second_row_address" id="facilities">您认为哪些设施最为必要？可多选</p>
-                <a href="javascript:void(0)" class="row_button second_row_changeAd" id="addFacility">添加设施</a>
+                <a href="javascript:void(0)" class="row_button second_row_changeAd iconfont icon-xiao47" id="addFacility"> 添加设施</a>
                 <div class="four_setFacility">
                     <div class="four_row_facility_model">
                         <input type="checkbox" value="餐厅"> 餐厅<br>
@@ -1234,7 +778,7 @@
             <div class="ISInfo_content_row">
                 <p class="row_name">用其他账号登录</p>
                 <p class="second_row_address">关联其他平台帐号，一键轻松登录 </p>
-                <a href="javascript:void(0)" class="row_button second_row_changeAd">微信登录</a>
+                <a href="javascript:void(0)" class="row_button second_row_changeAd"><img src="../res/images/weichar.png" class="weixinIcon">微信登录</a>
             </div>
         </div>
     </div>
@@ -1244,103 +788,7 @@
     </div>
 </div>
 
-<script>
-//    *****************个人中心****************
-    //        设置首个内容上浮效果
-    $(document).ready(function(){
-        $(".first-info-con a").mouseover(function (){
-           $(this).css({"background-color":"#0077CC"});
-            $(this).children(".first-info-con-icon").css({"margin-top":"30px","color":"white"});
-            $(this).children(".first-info-con-p1").css({"margin-top":"-5px","color":"white"});
-            $(this).children(".first-info-con-p2").css({"margin-top":"-10px","color":"white"});
-        });
-
-        $(".first-info-con a").mouseleave(function (){
-            $(this).css({"background-color":"white"});
-            $(this).children(".first-info-con-icon").css({"margin-top":"40px","color":"black"});
-            $(this).children(".first-info-con-p1").css({"margin-top":"0px","color":"black"});
-            $(this).children(".first-info-con-p2").css({"margin-top":"0px","color":"black"});
-        });
-    })
-
-//    *******************设置*****************
-    //        设置选项卡：左菜单的固定
-    $(document).ready(function () {
-        $(window).bind("scroll", function () {
-            var height = $(this).scrollTop(); 		// 当前窗口的滚动距离
-            var top;
-            if (height >= 140) {
-                $(".InstallBar").css({"top": "-20px"});
-            } else {
-                top = (140 - height).toString() + 'px';
-                $(".InstallBar").css({"top": top});
-            }
-        });
-    })
-
-    //        动态插入生日日期
-    $(document).ready(function(){
-        for(var i=1; i<=31; i++){
-            $("#select_day").append("<option value='" + i + "'>" + i +"</option>");
-        }
-        for(var i=1; i<=12; i++){
-            $("#select_month").append("<option value='" + i + "月'>" + i +"月</option>");
-        }
-        for(var i=1906; i<=2018; i++){
-            $("#select_year").append("<option value='" + i + "'>" + i +"</option>");
-        }
-    })
-
-//    修改家庭地址按钮
-    $(document).ready(function(){
-        $("#changAdBtn").click(function(){
-            $("#showAddress").css({"display":"none"});
-            $(this).css({"display":"none"});
-            $(".second_Ad_card").css({"display":"block"});
-        })
-
-        $("a[name='save']").click(function(){
-            var country = $("#country").find("option:selected").text();
-            var city = $("#city").val();
-            var address = $("#address").val();
-            var postal = $("#postal").val();
-            $("#showAddress").html(address + "," + postal + "," + city + "," + country);
-            $("a[name='exit']").click();
-        });
-
-        $("a[name='exit']").click(function(){
-            $("#showAddress").css({"display":"inline-block"});
-            $("#changAdBtn").css({"display":"block"});
-            $(".second_Ad_card").css({"display":"none"});
-        })
-    })
-
-//    添加必要设施按钮
-    $(document).ready(function(){
-        $("#addFacility").click(function(){
-            $("#facilities").css({"display":"none"});
-            $(this).css({"display":"none"});
-            $(".four_setFacility").css({"display":"block"});
-        });
-
-        $(".four_button a[name='save']").click(function(){
-            var isc = "";
-            $(".four_row_facility_model input:checked").each(function(){      //遍历全部checkbox
-                isc += $(this).val() + ",";              //获取所有checkbox的值
-            });
-            $("#facilities").html(isc);
-            $(".four_button a[name='exit']").click();
-        });
-
-        $(".four_button a[name='exit']").click(function(){
-            $("#facilities").css({"display":"inline-block"});
-            $("#addFacility").css({"display":"block"});
-            $(".four_setFacility").css({"display":"none"});
-        });
-    });
-
-</script>
-
+<script src="../js/PersonalCenter.js"></script>
 <script src="../js/NavBar.js"></script>
 <script src="../js/index_container.js"></script>
 </body>
